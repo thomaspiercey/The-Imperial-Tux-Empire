@@ -1,0 +1,239 @@
+/* LAYOUT
+*********************************************************/
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+section.blue-gradient {
+    border-bottom: 4px dotted white;
+}
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:  2%;
+    padding-bottom:  2%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    section {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top:  2%;
+        padding-bottom:  2%;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    section {
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top:  2%;
+            padding-bottom:  2%;
+        }
+ }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    section {
+            padding-left: 30%;
+            padding-right: 30%;
+            padding-top:  2%;
+            padding-bottom:  2%;
+        }
+}
+/* XLarge devices (xlarge desktops, 1200px and up) */
+@media (min-width: 2000px) { 
+    section {
+            padding-left: 40%;
+            padding-right: 40%;
+            padding-top:  2%;
+            padding-bottom:  2%;
+        }
+}
+
+
+.card {
+    margin:  40px 0;
+}
+.logo {
+    width:  100px;
+    height:  100px;
+    margin-bottom:  10px;
+    margin-top: 10px;
+}
+.logo-text {
+    width:  180px;
+    margin-bottom:  10px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        .logo {
+                    width:  150px;
+                    height:  150px;
+                    margin-bottom:  10px;
+                }
+          .logo-text {
+                width:  300px;
+                margin-bottom:  10px;
+                }      
+}
+.lead {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size:  18px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        .lead {
+        margin-bottom: 10px;
+        font-size:  24px;
+    }
+}
+
+/* TYPOGRAPHY
+*********************************************************/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "filson-soft",sans-serif;
+    line-height: 1.1;
+    color: #fecb00;
+}
+p {
+  font-family: "mr-eaves-sans",sans-serif;
+  line-height: 1.1;
+  color: #666666;
+  font-size:  18px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        p {
+              font-size:  20px;
+            }
+}
+
+
+/* BACKGROUNDS
+*********************************************************/
+.blue-gradient {
+    background: url(../img/bg-pattern.png),#4ea1be;
+    background: url(../img/bg-pattern.png),-webkit-linear-gradient(to left,#4ea1be,#0e9cc3);
+    background: url(../img/bg-pattern.png),linear-gradient(to left,#4ea1be,#0e9cc3);
+}
+/* MEDIA
+*********************************************************/
+.media {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e8e8e8;
+
+
+}
+.media:first-child {
+    margin-top: 50px;
+}
+.media:last-child {
+    border-bottom: none;
+}
+.media-left, .media>.pull-left {
+    padding-right: 25px;
+}
+.img-circle {
+border-radius: 10px;
+}
+
+/* BUTTONS
+*********************************************************/
+.btn {
+    display: inline-block;
+    padding: 14px 12px;
+    margin-bottom: 0;
+    margin-top: 20px;
+     height: 60px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "filson-soft",sans-serif;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.btn-primary {
+    color: #fff;
+    border-top:    1px solid #fbae17;
+    border-right:  1px solid #fbae17; 
+    border-left:  1px solid #fbae17; 
+    border-bottom: 5px solid #fbae17;
+    background: rgb(224,200,108); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(224,200,108,1) 0%, rgba(252,216,106,1) 53%, rgba(252,202,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(224,200,108,1) 0%,rgba(252,216,106,1) 53%,rgba(252,202,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(224,200,108,1) 0%,rgba(252,216,106,1) 53%,rgba(252,202,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0c86c', endColorstr='#fcca00',GradientType=0 ); /* IE6-9 */
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fbae17;
+    border-color:#fbae17;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #fbae17;
+    border-color: #fbae17;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #fbae17;
+    border-color: #fbae17;
+}
+.hide {
+    display:  none;
+}
+
+/* INPUT STYLE
+*********************************************************/
+.form-control {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 6px 18px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "filson-soft",sans-serif;
+    text-transform: uppercase;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background: url(../img/search-icon.png) no-repeat right #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.search-results {
+        background: #cccccc;
+        height: 60px;
+        padding: 18px 18px;
+        color: #ffffff;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "filson-soft",sans-serif;
+        text-transform: uppercase;
+            line-height: 1.42857143;
+}
